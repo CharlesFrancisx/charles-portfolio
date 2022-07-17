@@ -1,0 +1,134 @@
+/* Bai Jamjuree */
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100;200;300;400;500;600;700&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Italiana&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&family=Yeseva+One&display=swap');
+
+:root {
+    --color-blue: #48C5FF;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-grey: #464646;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 300vh;
+}
+
+/* nav bar */
+nav {
+    height: 124px;
+    width: 100%;
+    background: var(--color-black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+}
+
+nav .logo {
+    width: 82px;
+    height: 91px;
+    margin-left: 2rem;
+}
+
+nav .nav-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 3.5rem;
+    margin-right: 4rem;
+}
+nav .nav-btn a{
+    font-family: 'Bai Jamjuree';
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+/* mainpage-content */
+
+.main-page-content {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.main-page-content .main-page-img {
+    height: 904px;
+    min-width: 657px;
+}
+
+.main-page-content .main-page-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: .5rem;
+    flex-wrap: wrap;
+    margin: 0 2rem;
+}
+
+.main-page-content .main-page-txt .title{
+    font-family: "Bai Jamjuree";
+    font-weight: 500;
+    font-size: 100px;
+}
+
+.main-page-content .main-page-txt .sub-title {
+    font-family: "Bai Jamjuree";
+    font-size: 25px;
+    color: var(--color-grey);
+}
+
+
+/* first section */
+@media (max-width: 474px) {
+
+    .main-page-content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1150px) {
+    .main-page-content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .main-page-content .main-page-txt {
+        margin: 0 2rem;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 850) {
+    .main-page-content .main-page-txt {
+        margin: 0 2rem;
+    }
+}
+
+@media (max-width: 748px) {
+    .main-page-content .main-page-txt {
+        height: 80vh;
+        margin: 2rem;
+    }
+
+    .main-page-content .main-page-txt .title {
+        font-size: 80px;
+    }
+
+    .main-page-content .main-page-img {
+        width: 100%;
+        height: 80vh;
+    }
+
+
+}
